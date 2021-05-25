@@ -119,6 +119,11 @@ def setup_package():
                                  'Programming Language :: Python :: 2',
                                  'Programming Language :: Python :: 2.6',
                                  'Programming Language :: Python :: 2.7',
+                                 'Programming Language :: Python :: 3',
+                                 'Programming Language :: Python :: 3.5',
+                                 'Programming Language :: Python :: 3.6',
+                                 'Programming Language :: Python :: 3.7',
+                                 'Programming Language :: Python :: 3.8',
                                  ],
                     cmdclass={'clean': CleanCommand},
                     setup_requires=["numpy>=1.11.0"],
@@ -143,11 +148,11 @@ def setup_package():
         # if pip is installed, make sure that numpy
         # is installed (pip is not a requirement
         # for the bufferkdtree package) 
-        try:
-            import pip
-            pip.main(["install", "numpy>=1.11.0"])
-        except:
-            pass
+        #try:
+        #    import pip
+        #    pip.main(["install", "numpy>=1.11.0"])
+        #except:
+        #    pass
                     
         try:
             from numpy.distutils.core import setup as numpy_setup

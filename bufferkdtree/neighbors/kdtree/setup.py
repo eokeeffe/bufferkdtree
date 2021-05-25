@@ -10,7 +10,7 @@ import numpy
 SOURCES_RELATIVE_PATH = "../../src/"
 
 FILES_TO_BE_COMPILED = ["neighbors/kdtree/base.c", "neighbors/kdtree/util.c", "neighbors/kdtree/kdtree.c", "timing.c", "util.c"]
-DIRS_TO_BE_INCLUDED = ["neighbors/kdtree/include"]
+DIRS_TO_BE_INCLUDED = ["neighbors/kdtree/include","/usr/include/python3.8/"]
 
 # the absolute path to the sources
 current_path = os.path.dirname(os.path.abspath(__file__))
